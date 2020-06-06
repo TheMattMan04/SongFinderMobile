@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SongFinder</string>
+    <string name="find_song_text">Find Song</string>
+    <string name="input_song_text">Search</string>
+    <string name="song_searched" />
+    <string name="title_activity_song_search">SongSearchActivity</string>
+    <string name="song_name"></string>
+    <string name="get_lyrics">Get lyrics</string>
+    <string name="back_to_search">Back to search</string>
+</resources>
