@@ -3,6 +3,7 @@ package com.example.songfinder.activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -12,7 +13,6 @@ import com.example.songfinder.R;
 import com.squareup.picasso.Picasso;
 
 public class SongSearchActivity extends AppCompatActivity {
-
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,16 @@ public class SongSearchActivity extends AppCompatActivity {
     }
 
     public void backToSearch(View view) {
+        Intent intent = new Intent(SongSearchActivity.this, MainActivity.class);
+        startActivity(intent);
+    }
 
+    public void getLyrics(View view) {
+        String lyrics = getIntent().getStringExtra("lyrics");
+
+        Intent intent = new Intent(SongSearchActivity.this, SongLyricsActivity.class);
+        intent.putExtra("lyrics", lyrics);
+
+        startActivity(intent);
     }
 }

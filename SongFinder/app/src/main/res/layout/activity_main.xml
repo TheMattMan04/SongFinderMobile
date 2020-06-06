@@ -27,7 +27,8 @@
             android:inputType="textPersonName"
             android:onClick="setSongTitle"
             tools:text="@string/song_searched"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"/>
 
         <Button
             android:id="@+id/textButton"
@@ -39,8 +40,8 @@
             android:layout_marginBottom="0dp"
             android:onClick="searchSongText"
             android:text="@string/find_song_text"
-            android:textColor="#FFFFFF"
-            app:backgroundTint="#DA3503"
+            android:textColor="@color/colorPrimary"
+            app:backgroundTint="@color/colorPrimaryDark"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

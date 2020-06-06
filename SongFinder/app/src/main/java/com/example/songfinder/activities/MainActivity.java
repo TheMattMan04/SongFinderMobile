@@ -38,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
         songSearchedText = getResources().getString(R.string.song_searched);
 
         songTitleEditText = (EditText)findViewById(R.id.songTitleEditText);
-        songTitleEditText.setText(inputSongText);
+        songTitleEditText.setHint("Search");
     }
 
     public void setSongTitle(View view) {
-        songTitleEditText.setText(songSearchedText);
+
     }
 
     public void searchSongText(View view) {
@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra("title", song.getTitle());
                     intent.putExtra("artist", song.getAuthor());
                     intent.putExtra("image", song.getThumbnail());
+                    intent.putExtra("lyrics", song.getLyrics());
 
                     startActivity(intent);
                 }
