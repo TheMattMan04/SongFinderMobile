@@ -1,10 +1,15 @@
 <resources>
     <string name="app_name">SongFinder</string>
     <string name="find_song_text">Find Song</string>
-    <string name="input_song_text">Search</string>
+    <string name="input_song_text">Song Name</string>
     <string name="song_searched" />
     <string name="title_activity_song_search">SongSearchActivity</string>
     <string name="song_name"></string>
-    <string name="get_lyrics">Get lyrics</string>
+    <string name="get_lyrics">Lyrics</string>
     <string name="back_to_search">Back to search</string>
+    <string name="get_source">Get Source</string>
+    <string name="searching_song">Searching…</string>
+    <string name="empty_title">Please enter a song name</string>
+    <string name="song_not_found">Unable to find song</string>
+    <string name="error_occurred">Connection error</string>
 </resources>

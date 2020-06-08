@@ -13,10 +13,12 @@ public class SongResponse {
     private Genius thumbnail;
     @SerializedName("links")
     private Genius links;
+    @SerializedName("error")
+    private String error;
 
     public SongResponse() { }
 
-    public SongResponse(String title, String author, String lyrics, Genius thumbnail, Genius links) {
+    public SongResponse(String title, String author, String lyrics, Genius thumbnail, Genius links, String error) {
         this.title = title;
         this.author = author;
         this.lyrics = lyrics;
@@ -64,14 +66,23 @@ public class SongResponse {
         this.links = links;
     }
 
+    public String getError() {
+        return error;
+    }
+
+    public void setError(String error) {
+        this.error = error;
+    }
+
     @Override
     public String toString() {
-        return "Song{" +
+        return "SongResponse{" +
                 "title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 ", lyrics='" + lyrics + '\'' +
-                ", thumbnail='" + thumbnail + '\'' +
-                ", links='" + links + '\'' +
+                ", thumbnail=" + thumbnail +
+                ", links=" + links +
+                ", error='" + error + '\'' +
                 '}';
     }
 }

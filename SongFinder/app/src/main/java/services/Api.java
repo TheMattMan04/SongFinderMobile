@@ -8,7 +8,7 @@ import retrofit2.http.Query;
 
 public interface Api {
     @Headers("accept: application/json")
-    @GET("/api/lyrics")
+    @GET("/lyrics")
     Call<SongResponse> getSong(@Query("title") String title);
 
 }

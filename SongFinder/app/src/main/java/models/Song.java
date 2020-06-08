@@ -6,8 +6,9 @@ public class Song {
     private String lyrics;
     private String thumbnail;
     private String links;
+    private String error;
 
-    public Song(String title, String author, String lyrics, String thumbnail, String links) {
+    public Song(String title, String author, String lyrics, String thumbnail, String links, String error) {
         this.title = title;
         this.author = author;
         this.lyrics = lyrics;
@@ -55,6 +56,10 @@ public class Song {
         this.links = links;
     }
 
+    public String getError() {
+        return error;
+    }
+
     @Override
     public String toString() {
         return "Song{" +
@@ -63,6 +68,12 @@ public class Song {
                 ", lyrics='" + lyrics + '\'' +
                 ", thumbnail='" + thumbnail + '\'' +
                 ", links='" + links + '\'' +
+                ", error='" + error + '\'' +
                 '}';
     }
+
+    public void setError(String error) {
+        this.error = error;
+    }
+
 }
