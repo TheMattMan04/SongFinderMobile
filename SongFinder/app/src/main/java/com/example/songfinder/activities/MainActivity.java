@@ -98,7 +98,8 @@ public class MainActivity extends AppCompatActivity {
                 public void onFailure(Call<SongResponse> song, Throwable t) {
                     searchButton.setText(R.string.find_song_text);
                     Toast.makeText(MainActivity.this, R.string.error_occurred, Toast.LENGTH_SHORT).show();
-                    Log.d("Error: ", t.toString());
+
+                    Log.e("Error: ", t.toString());
                 }
             });
         }

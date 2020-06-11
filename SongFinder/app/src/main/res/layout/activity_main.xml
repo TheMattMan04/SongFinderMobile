@@ -18,16 +18,16 @@
         app:layout_constraintTop_toTopOf="parent"
         android:backgroundTint="@color/colorAccent">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/titleCard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="@color/colorAccent">
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:id="@+id/titleCard"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="8dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:backgroundTint="@color/colorAccent">-->
 
         <TextView
             android:id="@+id/text_view_id"
@@ -37,7 +37,7 @@
             android:textColor="@color/colorPrimary"
             android:textSize="30dp"
             android:textAlignment="center"/>
-    </com.google.android.material.card.MaterialCardView>
+<!--    </com.google.android.material.card.MaterialCardView>-->
 
     <LinearLayout
         android:id="@+id/linearLayout"
